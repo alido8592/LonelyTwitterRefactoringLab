@@ -17,7 +17,7 @@ import ca.ualberta.cs.lonelytweet.NormalLonelyTweet;
 class TweetsFileManager { //made package-private to address declaration redundancy
 
 	private static final String FILE_NAME = "file.sav"; //made private to address redundancy
-	private Context ctx;
+	private final Context ctx; // added final to address declaration redundancy
 
 	public TweetsFileManager(Context ctx) {
 		this.ctx = ctx;
